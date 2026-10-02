@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Petra Beauty | Maquiagem e Beleza em Santa Maria de Jetibá - ES</title>
+  
+  <!-- SEO & Metatags -->
+  <meta name="description" content="Studio Petra Beauty em Santa Maria de Jetibá, ES. Maquiagem blindada para noivas, formandas e eventos especiais, design de sobrancelhas, cílios, penteados e curso de automaquiagem.">
+  <meta name="author" content="Studio Petra Beauty">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Studio Petra Beauty | Transformamos beleza, realçamos sua essência">
+  <meta property="og:description" content="Maquiagem e produções pensadas para realçar quem você é — dos momentos especiais aos detalhes de todos os dias em Santa Maria de Jetibá, ES.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="assets/fotos-reais/hero-proprietaria.jpg">
+  
+  <!-- Tipografia Google Fonts: Lilita One em todo o site -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  
+  <!-- Pré-carregamento da imagem essencial da Hero (Proprietária) -->
+  <link rel="preload" as="image" href="assets/optimized/hero-proprietaria.webp" type="image/webp">
+  
+  <!-- Estilos Globais & Design System -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. CABEÇALHO & NAVEGAÇÃO INTEGRADA
+       ========================================================================= -->
+  <header class="site-header" id="header" role="banner">
+    <div class="nav-container">
+      
+      <!-- Logotipo Petra Beauty -->
+      <a href="#inicio" class="brand" aria-label="Studio Petra Beauty - Início">
+        <img class="brand-logo" src="assets/logo-petra-beauty-escuro.png" alt="Studio Petra Beauty" width="58" height="68">
+      </a>
+
+      <!-- Menu Principal Desktop -->
+      <nav class="nav-desktop" role="navigation" aria-label="Navegação Principal">
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link">Início</a></li>
+          <li><a href="#estudio" class="nav-link">O Estúdio</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Ações do Header -->
+      <div class="header-actions">
+        <a href="https://wa.me/27999108197?text=Ol%C3%A1%2C%20Studio%20Petra%20Beauty!%20Gostaria%20de%20consultar%20disponibilidade%20para%20agendamento." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn-header-cta" 
+           id="btn-header-whatsapp">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.303c-.087.087-.179.182-.077.357.101.174.452.746.969 1.206.666.592 1.228.776 1.402.863.173.087.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.176L2 22l4.981-1.396A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
+          </svg>
+          <span>Agendar</span>
+        </a>
+
+        <!-- Botão Menu Mobile -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menu de Navegação" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Linha de Progresso Editorial Superior Dinâmica -->
+  <div class="scroll-progress-track" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Gaveta Mobile -->
+  <div class="mobile-nav-backdrop" id="mobile-backdrop"></div>
+  <aside class="mobile-nav" id="mobile-nav" aria-label="Menu Mobile">
+    <ul class="mobile-nav-links">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#estudio">O Estúdio</a></li>
+      <li><a href="#portfolio">Portfólio</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <a href="https://wa.me/27999108197?text=Ol%C3%A1%2C%20Studio%20Petra%20Beauty!%20Gostaria%20de%20consultar%20disponibilidade%20para%20agendamento." 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="btn-primary" 
+         style="width: 100%; justify-content: center; margin-bottom: 1rem;">
+        Agendar pelo WhatsApp
+      </a>
+      <p style="font-size: 0.8rem; color: var(--color-ivory-muted); text-align: center;">
+        Santa Maria de Jetibá · ES
+      </p>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       2. HERO CINEMATOGRÁFICA — COREOGRAFIA DAS 3 CENAS
+       ========================================================================= -->
+  <section class="hero-viewport" id="inicio" aria-label="Apresentação Cinematográfica">
+    
+    <!-- Letra Monumental ao Fundo (Translúcida, semi-encoberta pela janela) -->
+    <div class="hero-watermark-wrap" aria-hidden="true">
+      <span class="hero-watermark">PETRA</span>
+    </div>
+
+    <div class="hero-stage">
+      
+      <!-- A Grande Janela Cinematográfica Central -->
+      <div class="cinematic-window" id="hero-window">
+        
+        <!-- Cortina Líquida para Transição Vinho Profundo -->
+        <div class="scene-curtain" aria-hidden="true"></div>
+
+        <!-- -----------------------------------------------------------------
+             CENA 1: ESTADO INICIAL (Clara / Marfim Rosado)
+             Proprietária Studio Petra Beauty
+             ----------------------------------------------------------------- -->
+        <article class="scene-frame active" data-scene="1" aria-label="Cena 1: Studio Petra Beauty">
+          <div class="scene-img-mask">
+            <picture>
+              <source srcset="assets/optimized/hero-petra-sofa-sem-texto.webp" type="image/webp">
+              <img src="assets/fotos-reais/hero-petra-sofa-sem-texto.png" 
+                   alt="Profissional do Studio Petra Beauty sentada no sofá com um notebook" 
+                   class="scene-photo photo-proprietaria">
+            </picture>
+            <div class="scene-overlay"></div>
+          </div>
+
+          <!-- Conteúdo com Máscaras de Linha Recortadas -->
+          <div class="scene-content">
+            <h1 class="editorial-title scene-title">
+              <span class="title-line-mask"><span class="title-line">Sua beleza,</span></span>
+              <span class="title-line-mask"><span class="title-line"><span class="editorial-italic text-gold">do seu</span> jeito.</span></span>
+            </h1>
+
+            <p class="scene-subtitle">
+              Maquiagem e produções pensadas para realçar quem você é — dos momentos especiais aos detalhes de todos os dias.
+            </p>
+
+            <div class="scene-actions">
+              <a href="https://wa.me/27999108197?text=Ol%C3%A1%2C%20Studio%20Petra%20Beauty!%20Gostaria%20de%20agendar%20meu%20momento." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn-primary" 
+                 id="hero-cta-agendar">
+                Agendar meu momento
+              </a>
+              <a href="#portfolio" class="btn-secondary" id="hero-cta-portfolio">
+                Conhecer os trabalhos
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- -----------------------------------------------------------------
+             CENA 2: TRANSIÇÃO ÍNTIMA (Vinho Profundo / Noite & Formaturas)
+             Formanda Lorena + Detalhe Maquiagem Josyane
+             ----------------------------------------------------------------- -->
+        <article class="scene-frame" data-scene="2" aria-label="Cena 2: Formandas e Ocasiões Especiais">
+          <div class="scene-img-mask">
+            <picture>
+              <source srcset="assets/optimized/hero-petra-sentada-sem-texto.webp" type="image/webp">
+              <img src="assets/fotos-reais/hero-petra-sentada-sem-texto.png" 
+                   alt="Profissional do Studio Petra Beauty sentada no estúdio" 
+                   class="scene-photo photo-formanda">
+            </picture>
+            <div class="scene-overlay"></div>
+          </div>
+
+          <!-- Conteúdo Cena 2 -->
+          <div class="scene-content">
+            <h2 class="editorial-title scene-title" style="color: #FAF6F1;">
+              <span class="title-line-mask"><span class="title-line">Produções que</span></span>
+              <span class="title-line-mask"><span class="title-line"><span class="editorial-italic text-gold">marcam seus</span> momentos.</span></span>
+            </h2>
+
+            <p class="scene-subtitle" style="color: var(--color-wine-muted);">
+              Maquiagem blindada de alta resistência e acabamento impecável para você viver intensamente cada instante da festa.
+            </p>
+
+            <div class="scene-actions">
+              <a href="https://wa.me/27999108197?text=Ol%C3%A1%2C%20Studio%20Petra%20Beauty!%20Gostaria%20de%20agendar%20meu%20momento." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn-primary">
+                Agendar meu momento
+              </a>
+              <a href="#portfolio" class="btn-secondary">
+                Conhecer os trabalhos
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- -----------------------------------------------------------------
+             CENA 3: RETORNO CLARO (Foco no Olhar / Tons Rosados & Precisão)
+             Maquiagem Iasmim + Detalhe Design com Henna
+             ----------------------------------------------------------------- -->
+        <article class="scene-frame" data-scene="3" aria-label="Cena 3: Foco no Olhar e Beleza Social">
+          <div class="scene-img-mask">
+            <picture>
+              <source srcset="assets/optimized/hero-petra-luvas-sem-texto.webp" type="image/webp">
+              <img src="assets/fotos-reais/hero-petra-luvas-sem-texto.png" 
+                   alt="Profissional do Studio Petra Beauty com luvas para atendimento de beleza" 
+                   class="scene-photo photo-iasmim">
+            </picture>
+            <div class="scene-overlay"></div>
+          </div>
+
+          <!-- Conteúdo Cena 3 -->
+          <div class="scene-content">
+            <h2 class="editorial-title scene-title">
+              <span class="title-line-mask"><span class="title-line">O poder do olhar</span></span>
+              <span class="title-line-mask"><span class="title-line">e o <span class="editorial-italic text-gold">cuidado</span> em cada traço.</span></span>
+            </h2>
+
+            <p class="scene-subtitle">
+              Sobrancelhas alinhadas, cílios desenhados e pele leve que valorizam sua singularidade e trazem frescor natural.
+            </p>
+
+            <div class="scene-actions">
+              <a href="https://wa.me/27999108197?text=Ol%C3%A1%2C%20Studio%20Petra%20Beauty!%20Gostaria%20de%20agendar%20meu%20momento." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn-primary">
+                Agendar meu momento
+              </a>
+              <a href="#portfolio" class="btn-secondary">
+                Conhecer os trabalhos
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Indicador Discreto de Scroll -->
+      <a href="#estudio" class="hero-scroll-cue" aria-label="Rolar para baixo e conhecer o estúdio">
+        <div class="scroll-mouse" aria-hidden="true">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Role para explorar</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. BLOCO: O ESTÚDIO & FILOSOFIA DE ATENDIMENTO
+       ========================================================================= -->
+  <section class="section-studio" id="estudio" aria-labelledby="heading-estudio">
+    <div class="container">
+      <div class="studio-grid">
+        
+        <!-- Tour Cinematográfico em Vídeo do Estúdio -->
+        <div class="studio-visual">
+          <div class="studio-video-card" id="studio-video-card">
+            
+            <!-- Moldura Interna com o Vídeo em Loop -->
+            <div class="studio-video-wrap">
+              <video id="studio-video" 
+                     class="studio-video-media" 
+                     autoplay 
+                     loop 
+                     muted 
+                     playsinline 
+                     preload="auto" 
+                     poster="assets/video-studio-poster.jpg"
+                     aria-label="Tour pelo Studio Petra Beauty em Santa Maria de Jetibá">
+                <source src="assets/video-studio-ambiente.mp4" type="video/mp4">
+                <source src="assets/SaveClip.App_AQOYQXeAbk5JwE0Bf5r-0XiUuOEJ2qggRfFKl1lwQ3bBoGEVhuLlC87_vE-2JThPEGAmcuq0xlGMqt6vh1kIo6gqs46BZjMV0pwNmiI.mp4" type="video/mp4">
+              </video>
+              
+
+
+              <!-- Rodapé do Card com Selo de Experiência e Localização -->
+              <div class="studio-video-footer">
+                <span class="studio-video-kicker">Ambiente Exclusivo</span>
+                <p class="studio-video-caption">Atendimento reservado e intimista · Santa Maria de Jetibá, ES</p>
+              </div>
+            </div>
+
+            <!-- Moldura de Ateliê e Aura Dourada -->
+            <div class="studio-card-frame-accent" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <!-- Narrativa Editorial -->
+        <div class="studio-narrative">
+          <h2 class="editorial-title section-heading" id="heading-estudio">
+            Um ambiente pensado para <span class="editorial-italic text-gold">acolher</span> e valorizar você.
+          </h2>
+
+          <p class="section-description">
+            Localizado no coração de <strong>Santa Maria de Jetibá, ES</strong>, o Studio Petra Beauty foi projetado para oferecer mais do que um procedimento: um momento de pausa, autocuidado e bem-estar.
+          </p>
+
+          <div class="features-list">
+            
+            <div class="feature-item">
+              <div class="feature-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+              </div>
+              <div class="feature-text">
+                <h4>Atendimento Individualizado</h4>
+                <p>Tempo dedicado a compreender suas preferências, formato de rosto e a essência do seu evento.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+              </div>
+              <div class="feature-text">
+                <h4>Maquiagem Blindada</h4>
+                <p>Técnicas avançadas de preparação e fixação para suportar calor, suor, lágrimas e longas horas de comemoração.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div class="feature-text">
+                <h4>Pontualidade e Calma</h4>
+                <p>Cronograma planejado sem pressa para que você aproveite sua preparação com serenidade e confiança.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div>
+            <a href="https://wa.me/27999108197?text=Ol%C3%A1%2C%20Studio%20Petra%20Beauty!%20Gostaria%20de%20conhecer%20mais%20sobre%20o%20espa%C3%A7o%20e%20agendamentos." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-primary">
+              Conversar com o Estúdio
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- =========================================================================
+       5. BLOCO: PORTFÓLIO COM FOTOS REAIS DO ESTÚDIO
+       ========================================================================= -->
+  <section class="section-portfolio" id="portfolio" aria-labelledby="heading-portfolio">
+    <div class="container">
+      <div class="portfolio-header">
+        <div class="portfolio-heading">
+          <h2 id="heading-portfolio">Beleza para <em>viver</em> cada momento.</h2>
+        </div>
+        <p>Uma seleção de produções reais, feitas para valorizar o estilo e a expressão de cada cliente.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <button type="button" class="portfolio-item" data-category-label="Noivas" data-title="Noiva Jercilane" data-desc="Maquiagem e produção para o dia do casamento.">
+          <span class="portfolio-image">
+            <picture>
+              <source srcset="assets/optimized/hero-noiva-jercilane.webp" type="image/webp">
+              <img src="assets/fotos-reais/hero-noiva-jercilane.jpg" alt="Noiva Jercilane com maquiagem, coroa e buquê" loading="lazy" decoding="async">
+            </picture>
+          </span>
+          <span class="portfolio-meta">
+            <span class="portfolio-index">01</span>
+            <span class="portfolio-text"><span class="portfolio-category">NOIVAS</span><span class="portfolio-title">Jercilane</span></span>
+          </span>
+        </button>
+
+        <button type="button" class="portfolio-item" data-category-label="Formandas" data-title="Formanda Lorena" data-desc="Produção para ensaio de formatura.">
+          <span class="portfolio-image">
+            <picture>
+              <source srcset="assets/optimized/portfolio-formanda-lorena.webp" type="image/webp">
+              <img src="assets/fotos-reais/portfolio-formanda-lorena.jpg" alt="Lorena com maquiagem para seu ensaio de formatura" loading="lazy" decoding="async">
+            </picture>
+          </span>
+          <span class="portfolio-meta">
+            <span class="portfolio-index">02</span>
+            <span class="portfolio-text"><span class="portfolio-category">FORMATURA</span><span class="portfolio-title">Lorena</span></span>
+          </span>
+        </button>
+
+        <button type="button" class="portfolio-item" data-category-label="Maquiagem para ocasiões especiais" data-title="Maquiagem de Josyane" data-desc="Maquiagem para a comemoração de aniversário de Josyane.">
+          <span class="portfolio-image">
+            <picture>
+              <source srcset="assets/optimized/portfolio-maquiagem-josyane.webp" type="image/webp">
+              <img src="assets/fotos-reais/portfolio-maquiagem-josyane.jpg" alt="Josyane com maquiagem para sua comemoração de aniversário" loading="lazy" decoding="async">
+            </picture>
+          </span>
+          <span class="portfolio-meta">
+            <span class="portfolio-index">03</span>
+            <span class="portfolio-text"><span class="portfolio-category">MAQUIAGEM</span><span class="portfolio-title">Josyane</span></span>
+          </span>
+        </button>
+
+        <button type="button" class="portfolio-item" data-category-label="Maquiagem para ocasiões especiais" data-title="Maquiagem de Iasmim" data-desc="Maquiagem em tons rosados para a comemoração de aniversário de Iasmim.">
+          <span class="portfolio-image">
+            <picture>
+              <source srcset="assets/optimized/portfolio-maquiagem-iasmim.webp" type="image/webp">
+              <img src="assets/fotos-reais/portfolio-maquiagem-iasmim.jpg" alt="Iasmim com maquiagem delicada em tons rosados" loading="lazy" decoding="async">
+            </picture>
+          </span>
+          <span class="portfolio-meta">
+            <span class="portfolio-index">04</span>
+            <span class="portfolio-text"><span class="portfolio-category">MAQUIAGEM</span><span class="portfolio-title">Iasmim</span></span>
+          </span>
+        </button>
+
+        <button type="button" class="portfolio-item" data-category-label="Sobrancelhas" data-title="Design com henna" data-desc="Resultado de design de sobrancelhas com henna.">
+          <span class="portfolio-image">
+            <picture>
+              <source srcset="assets/optimized/portfolio-design-henna.webp" type="image/webp">
+              <img src="assets/fotos-reais/portfolio-design-henna.jpg" alt="Cliente após atendimento de design de sobrancelhas com henna" loading="lazy" decoding="async">
+            </picture>
+          </span>
+          <span class="portfolio-meta">
+            <span class="portfolio-index">05</span>
+            <span class="portfolio-text"><span class="portfolio-category">SOBRANCELHAS</span><span class="portfolio-title">Design com henna</span></span>
+          </span>
+        </button>
+      </div>
+
+      <div class="portfolio-footer">
+        <span>Uma seleção do que criamos no estúdio.</span>
+        <a href="https://www.instagram.com/studio.petrabeauty/" target="_blank" rel="noopener noreferrer">Ver mais trabalhos no Instagram</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       7. BLOCO: CTA FINAL PARA WHATSAPP
+       ========================================================================= -->
+  <section class="section-cta" id="contato" aria-labelledby="heading-cta">
+    <div class="container">
+      
+      <div class="cta-box">
+        <div class="cta-content">
+          <h2 class="cta-heading" id="heading-cta">A beleza de um dia <em>inesquecível</em> começa aqui.</h2>
+          <p class="cta-subtext">Vamos conversar sobre a produção que você imagina? Consulte a disponibilidade para noivas, formaturas e ocasiões especiais.</p>
+          <div class="cta-buttons">
+          <a href="https://wa.me/27999108197?text=Ol%C3%A1%2C%20Studio%20Petra%20Beauty!%20Gostaria%20de%20consultar%20disponibilidade%20para%20agendamento." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn-cta-whatsapp" 
+             id="cta-final-whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.303c-.087.087-.179.182-.077.357.101.174.452.746.969 1.206.666.592 1.228.776 1.402.863.173.087.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.176L2 22l4.981-1.396A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
+            </svg>
+            <span>Consultar disponibilidade</span>
+          </a>
+
+          </div>
+        </div>
+        <div class="cta-visual" aria-label="Fotografia de Petra Aguiar, maquiadora profissional">
+          <div class="cta-frame">
+            <div class="cta-frame-inner">
+              <img src="assets/foto-petra-batom-cta.png" 
+                   alt="Petra Aguiar, maquiadora profissional do Studio Petra Beauty em momento de produção" 
+                   loading="lazy" 
+                   class="cta-photo">
+              
+            </div>
+            
+            <!-- Contorno decorativo de ateliê -->
+            <div class="cta-frame-border" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. RODAPÉ EDITORIAL
+       ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img class="footer-logo" src="assets/logo-petra-beauty-escuro.png" alt="Petra Beauty" width="130" height="152" loading="lazy">
+          <p class="footer-tagline">
+            “Transformamos beleza, realçamos sua essência!” — Atendimento exclusivo de maquiagem, noivas, sobrancelhas e produções especiais.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#estudio">O Estúdio</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Informações</h4>
+          <div class="footer-info">
+            <p><strong>Cidade:</strong> Santa Maria de Jetibá, ES</p>
+            <p><strong>Atendimento:</strong> Mediante agendamento prévio</p>
+            <p><strong>WhatsApp:</strong> (27) 99910-8197</p>
+            <p><strong>Instagram:</strong> @studio.petrabeauty</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Studio Petra Beauty. Todos os direitos reservados.</p>
+        <p>Fotografias reais das clientes e ambiente do Studio Petra Beauty.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       9. BOTÃO FLUTUANTE DISCRETO DE WHATSAPP
+       ========================================================================= -->
+  <aside>
+    <a href="https://wa.me/27999108197?text=Ol%C3%A1%2C%20Studio%20Petra%20Beauty!%20Gostaria%20de%20consultar%20disponibilidade%20para%20agendamento." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="floating-whatsapp" 
+       id="floating-whatsapp-btn" 
+       aria-label="Abrir conversa no WhatsApp com Studio Petra Beauty">
+      <div class="whatsapp-icon-wrap" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.303c-.087.087-.179.182-.077.357.101.174.452.746.969 1.206.666.592 1.228.776 1.402.863.173.087.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.176L2 22l4.981-1.396A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
+        </svg>
+      </div>
+      <span>Agendar Horário</span>
+    </a>
+  </aside>
+
+  <!-- =========================================================================
+       10. MODAL LIGHTBOX EDITORIAL DO PORTFÓLIO
+       ========================================================================= -->
+  <div class="portfolio-modal" id="portfolio-modal" role="dialog" aria-modal="true" aria-label="Visualização de Foto do Portfólio" aria-hidden="true" inert>
+    <div class="modal-content-wrap">
+      
+      <button class="modal-close-btn" aria-label="Fechar visualização">
+        &times;
+      </button>
+
+      <div class="modal-media">
+        <img src="" alt="" id="modal-img">
+      </div>
+
+      <div class="modal-info">
+        <span class="modal-category">Categoria</span>
+        <h3 class="modal-title">Título do Trabalho</h3>
+        <p class="modal-desc">Descrição e detalhes da maquiagem e técnica utilizada.</p>
+        
+        <a href="" target="_blank" rel="noopener noreferrer" class="btn-primary btn-primary-wine modal-whatsapp-btn">
+          Quero este estilo
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Script da Aplicação -->
+  <script src="js/app.js"></script>
+</body>
+</html>
