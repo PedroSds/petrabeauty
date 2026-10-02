@@ -1,10 +1,9 @@
-{
+﻿{
   "name": "site-petra-beauty",
   "version": "1.0.0",
-  "description": "Website oficial do Studio Petra Beauty em Santa Maria de Jetibá - ES",
+  "description": "Website oficial do Studio Petra Beauty em Santa Maria de Jetiba - ES",
   "scripts": {
-    "dev": "node server.js",
-    "start": "node server.js"
+    "dev": "node scripts/dev-server.js"
   },
   "keywords": [
     "beauty",
